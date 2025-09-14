@@ -1,0 +1,162 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ===== LAYOUT GERAL ===== */
+body {
+  background: #f0f4f3;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2.2rem;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Mensagem de sucesso */
+.msg-success {
+  background: #d3f9d8;
+  color: #2b8a3e;
+  border: 1px solid #b2f2bb;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* ===== BOTÕES PRINCIPAIS (menu) ===== */
+.menu-btn {
+  display: block;
+  width: 100%;
+  background: #0b6e4f;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 0.6rem;
+}
+
+/* ===== SEPARAÇÃO ENTRE BOTÕES E LISTA ===== */
+.lembretes-lista {
+  margin-top: 1.5rem;
+}
+
+/* ===== REMINDER CARD ===== */
+.reminder-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 1rem;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.reminder-card.alert-done {
+  background: #e6f9ed;
+  border: 1px solid #c9f0d2;
+}
+
+.reminder-card.alert-pending {
+  background: #fff7da;
+  border: 1px solid #ffe8a3;
+}
+
+/* Texto em cima */
+.reminder-top {
+  margin-bottom: 8px;
+}
+
+.reminder-title {
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.reminder-meta {
+  font-size: 0.9rem;
+  color: #444;
+  opacity: 0.9;
+}
+
+.status-text {
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+/* Botões embaixo */
+.actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Botões pequenos */
+.btn-small {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* azul - editar */
+.edit-btn { background-color: #1971c2; }
+.edit-btn:hover { background-color: #145a9a; }
+
+/* verde - já fiz */
+.done-btn { background-color: #28a745; }
+.done-btn:hover { background-color: #1c7c31; }
+
+/* vermelho - excluir */
+.delete-btn { background-color: #dc3545; }
+.delete-btn:hover { background-color: #a71d2a; }
+
+/* ===== RODAPÉ ===== */
+.footer {
+  font-size: 0.8rem;
+  color: #777;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+    max-width: 92%;
+  }
+}
