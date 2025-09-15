@@ -20,6 +20,44 @@ $list = $s->fetchAll();
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <title>Histórico</title>
+    <style>
+        /* Ajuste para não sobrepor o botão */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #1a7256;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #145b44;
+        }
+
+        .alert {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .alert-done {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .alert-pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .container {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -48,8 +86,10 @@ $list = $s->fetchAll();
                 <p>Sem registros ainda.</p>
             <?php endif; ?>
 
-            <!-- UI/UX - botão de navegação -->
-            <a class="btn" href="principal.php">Voltar</a>
+            <!-- Botão com margem inferior -->
+            <div>
+                <a class="btn" href="principal.php">Voltar</a>
+            </div>
         </div>
     </div>
 
